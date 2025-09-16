@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DollarSign, TrendingUp, Users, Eye } from 'lucide-react';
+import { DollarSign, TrendingUp, Users, Eye, Coffee } from 'lucide-react';
 import { useTheme } from './hooks/useTheme';
 import { useDashboardData } from './hooks/useDashboardData';
 import { useExport } from './hooks/useExport';
@@ -120,6 +120,25 @@ const Dashboard: React.FC = () => {
           <GeographicDataList data={geoData} />
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-200 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-center gap-2 text-sm text-slate-800 dark:text-slate-200">
+            <span>Made with</span>
+            <Coffee className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+            <span>by</span>
+            <a
+              href="https://github.com/utsabpanta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline underline-offset-2 decoration-slate-400 dark:decoration-slate-500 hover:decoration-blue-600 dark:hover:decoration-blue-400"
+            >
+              Utsab Pant
+            </a>
+          </div>
+        </div>
+      </footer>
 
       {/* Success Notification */}
       <ExportSuccessToast show={showExportSuccess} isDarkMode={isDarkMode} />

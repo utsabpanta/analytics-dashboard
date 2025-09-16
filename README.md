@@ -2,6 +2,8 @@
 
 A modern, responsive analytics dashboard built with React, TypeScript, Lucide React, Recharts and Vite. This project is an example for data visualization, real-time updates, and crisp UI/UX design.
 
+Live demo is [here](https://analytics-dashboard-theta-roan.vercel.app/)
+
 ## 📦 Installation
 ``` You can use npm or pnpm```
 ```bash
